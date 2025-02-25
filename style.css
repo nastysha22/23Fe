@@ -1,0 +1,19 @@
+body {
+font-family: Arial, sans-serif; 
+background-color: #799979;
+color: #799979;
+}
+header {
+background: #496b49;
+color: white; 
+padding: 25px; 
+text-align: center;
+border-radius: 10px;
+}
+div {
+margin: 20px; 
+padding: 15px;
+background: white; 
+border-radius: 20px;
+
+}
