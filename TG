@@ -1,15 +1,16 @@
+import random
 import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
-
+ 
 bot = Bot(token="8111797848:AAFMJQB6Mh0uaT_Qru68VDvHIwrOgBMERoM")
 dp = Dispatcher()
-
+ 
 @dp.message( Command('start'))
 async def cmd_start(message:types.message):
     print('ввели команду /start')
-    await message.answer( 'привет, ты ввел команду /start' )
-
+    await message.answer( 'привет, тф ввел команду /start' )
+ 
 @dp.message( Command('echo'))
 async def cmd_echo(message:types.message):
     print('ввели команду /echo')
@@ -18,19 +19,37 @@ async def cmd_echo(message:types.message):
         await message.answer(text)
     else:
         await message.answer('пожалуйста добавьте текст к сообщению')
-
+ 
 @dp.message( Command('kiss'))
 async def cmd_kiss(message:types.message):
     print('ты ввел команду /kiss')
     await message.answer( '💋' )
+ 
+@dp.message( Command('tsuefa'))
+async def cmd_start(message:types.message):
+    print('ввели команду /tsuefa')
+    await message.answer ( '/tsuefa ') 
+    m=[ "камень" ,"ножницы" ," бумага"]
+    a=random.choice(m)
+    text = message.text.replace('/tsuefa','').strip()
+    if text==a:
+        await message.answer('НИЧЬЯ')
+    elif (a=='камень' and text=='бумага') or (a=='бумага' and text=='ножницы' ) or (a=='ножницы' and text=='камень'):
+        await message.answer('🎉')
+    else :
+        await message.answer('ты допустил ошибку,но мы даем тебе еще один шанс')
+
+
 
 
 
 
 async def main():
     await dp.start_polling(bot)
-
+ 
 if __name__ =='__main__':
     print('бот начал работать')
     asyncio.run(main())
+
+
 
