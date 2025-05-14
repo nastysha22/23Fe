@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sports.css">
+    <link rel="stylesheet" href="sport.css">
 </head>
 <div class="header">
     <h1>Спорт</h1>
@@ -21,8 +21,8 @@
 <div class="r">
         <a href="hocey.html"class="btn">Хоккей</a>
         <a href="hobihors.html"class="btn">Хобихорсинг</a>
-        <a href=""class="btn">Футбол</h3>
-        <a href=""class="btn">Киберспорт</h3>
+        <a href=""class="btn">Киберспорт</a>
+        <a href=""class="btn">Футбол</a>
 </div>
 <div class="l"><h1></h1></div>
 <div class="f">Спорт от англ. sport — сокращение от первоначального старофранц. disport — «развлечение, забава») — организованная по определённым правилам деятельность людей (спортсме́нов), состоящая в сопоставлении их физических или интеллектуальных способностей. </div>
