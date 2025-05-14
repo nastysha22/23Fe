@@ -110,3 +110,13 @@ background-color: #E58A96;
  text-align: center;
  padding:7px;
 }
+.btn {
+    display: inline-block; 
+    background: #ceafe2; 
+    color: #fff; 
+    padding: 17px 35px;
+    text-decoration: none; 
+    border-radius: 3px; 
+    margin:5px;
+    Margin-right:10px;
+}
