@@ -22,15 +22,13 @@ body{
          margin-left: 70px;
     
 }
-.r {
+.r{
     width: 300px;
     height:800px;
     background-color:#F8F1FE;
+    margin-bottom:25px;
 }
-.r {
-        margin-bottom:25px;
-         margin-left: 20px;
-}
+
 .l{
     width: 0px;
     height:0px;
@@ -110,11 +108,14 @@ background-color: #E58A96;
  text-align: center;
  padding:7px;
 }
+
 .btn {
     display: inline-block; 
-    background: #8C959D; 
+    background: #ceafe2; 
     color: #fff; 
-    padding: 16px 32px;
+    padding: 16px 35px;
     text-decoration: none; 
     border-radius: 3px; 
-  }
+    margin:5px;
+    Margin-right:30px;
+}
